@@ -1,7 +1,7 @@
 package ComparableAndComparators;
 
-public class MovieRanking implements Comparable<MovieRanking>{
-	String movie_name;
+public class MovieRanking{
+	String movie_name; 
 	int user_rating;
 	int critics_score;
 	
@@ -37,19 +37,19 @@ public class MovieRanking implements Comparable<MovieRanking>{
 	
 	
 	// JVM --> order movie objects on the basis of user ratings
-	@Override
-	public int compareTo(MovieRanking movie) {
-		if(this.getCritics_score() < movie.getCritics_score()) {
-			return -1;
-		}
-		else if(this.getCritics_score() > movie.getCritics_score()) {
-				return 1;
-		}
-		else
-			return 0;
-		
-//		return this.getMovie_name() - movie.getMovie_name();
-	}
+//	@Override
+//	public int compareTo(MovieRanking movie) {
+////		if(this.getCritics_score() < movie.getCritics_score()) {
+////			return -1;
+////		}
+////		else if(this.getCritics_score() > movie.getCritics_score()) {
+////				return 1;
+////		}
+////		else
+////			return 0;
+//		
+//		return this.getMovie_name().compareTo(movie.getMovie_name());
+//	}
 	
 	// print the data inside an object --> MovieRanking
 	@Override
